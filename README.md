@@ -92,7 +92,7 @@ Example:
 
 **Akshaya**
 
-Elextronics and Communication Student
+Electronics and Communication Student
 
 Interested in:
 - Generative AI
