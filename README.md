@@ -90,9 +90,9 @@ Example:
 
 ## 👨‍💻 Author
 
-**Ajin**
+**Akshaya**
 
-Computer Science Engineering Student
+Elextronics and Communication Student
 
 Interested in:
 - Generative AI
@@ -104,4 +104,5 @@ Interested in:
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License.MIT License
+
