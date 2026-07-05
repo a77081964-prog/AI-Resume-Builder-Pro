@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Resume</title>
+
+    <link rel="stylesheet" href="css/resume.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="theme-toggle">
+    <button id="themeBtn">🌙 Dark Mode</button>
+</div>
+<div class="container">
+
+    <!-- Left Side Form -->
+    <div class="form-section">
+
+        <h2>Create Your Resume</h2>
+        <label>Profile Photo</label>
+
+        <input
+           type="file"
+           id="photo"
+           accept="image/*">
+
+        <input type="text" id="name" placeholder="Full Name">
+
+        <input type="email" id="email" placeholder="Email">
+
+        <input type="text" id="phone" placeholder="Phone Number">
+
+        <textarea id="summary" placeholder="Professional Summary"></textarea>
+
+        <input type="text" id="college" placeholder="College">
+
+        <input type="text" id="degree" placeholder="Degree">
+
+        <input type="text" id="skills" placeholder="Skills (Comma separated)">
+        <h3>Projects</h3>
+
+        <input
+         type="text"
+         id="projectTitle"
+         placeholder="Project Title">
+
+      <textarea
+         id="projectDescription"
+         placeholder="Project Description"></textarea>
+
+      <button type="button" id="addProjectBtn">
+       Add Project
+     </button>
+
+        <div class="button-group">
+            <button type="button" id="analyzeBtn">
+              Analyze Resume
+            </button>
+            <label>Select Resume Template</label>
+
+            <select id="templateSelect">
+
+             <option value="template1">Professional Blue</option>
+
+             <option value="template2">Modern Green</option>
+
+             <option value="template3">Elegant Dark</option>
+
+           </select>
+
+          <button type="button" id="previewBtn">
+             Preview Resume
+          </button>
+
+         <button type="button" id="downloadBtn">
+             Download PDF
+         </button>
+
+    </div>
+    </div>
+
+    <!-- Right Side Preview -->
+
+    <div class="preview-section">
+        <div class="profile-container">
+
+          <img
+            id="previewPhoto"
+            src="https://via.placeholder.com/150"
+            alt="Profile Photo">
+
+    </div>
+
+        <h1 id="pname">Your Name</h1>
+
+        <p id="pemail">Email</p>
+
+        <p id="pphone">Phone</p>
+
+        <hr>
+
+        <h3>Professional Summary</h3>
+
+        <p id="psummary"></p>
+
+        <h3>Education</h3>
+
+        <p id="peducation"></p>
+
+       <h3>Skills</h3>
+       <hr>
+
+      <h3>AI Suggestions</h3>
+
+     <ul id="suggestions"></ul>
+
+<div id="pskills" class="skills-container"></div> 
+<hr>
+
+<h3>Projects</h3>
+
+<div id="projectPreview"></div>
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
+<script src="js/resume.js"></script>
+<script src="js/theme.js"></script>
+<div id="toast" class="toast">
+    Action completed successfully!
+</div>
+</body>
+</html>
